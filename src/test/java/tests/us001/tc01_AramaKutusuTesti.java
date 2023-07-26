@@ -12,6 +12,6 @@ public class tc01_AramaKutusuTesti {
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
         Page page = new Page();
         page.aramaKutusu.sendKeys("iphohe", Keys.ENTER );
-
+       Driver.closeDriver();
     }
 }
